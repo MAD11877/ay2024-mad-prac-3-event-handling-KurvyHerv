@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prac3</string>
+    <string name="dialog_message">MADness</string>
+    <string name="dialog_title">Profile</string>
+    <string name="option1">View</string>
+    <string name="option2">CLOSE</string>
+</resources>
