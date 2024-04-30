@@ -1,5 +1,6 @@
 package sg.edu.np.mad.madpractical3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -53,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
                     btnFollow.setText("Unfollow");
                     toastUnfollow.show();
                 }
+            }
+        });
+
+        Button btnMessage = findViewById(R.id.btnMessage);
+        btnMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = (new Intent(v.getContext(), MessageGroup.class));
+                startActivity(intent);
             }
         });
     }
